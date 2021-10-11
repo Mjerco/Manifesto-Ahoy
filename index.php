@@ -21,20 +21,6 @@
       </div>
     </div>
   </div>
-
-<div class="row" id="content">
-  <div class="col-12">
-    <?php
-      if ( isset($_GET["content"]) ){
-        include("./" . $_GET["content"] . ".php");
-      }
-      else {
-        include("./homepage.php");
-      }
-    ?>
-  </div>
-</div>
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
