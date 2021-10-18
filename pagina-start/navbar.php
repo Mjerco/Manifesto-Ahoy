@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="./index.php?content=home">
       <img src="./IMG/rotterdam-ahoy-logo.png" alt="Logo" width="30" height="24">
     </a>
     <div class="collapse navbar-collapse" id="navbarNav">
