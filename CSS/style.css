@@ -1,7 +1,6 @@
 .navbar {
     background-color: purple;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0px;
 }
 
 .text-card {
@@ -9,5 +8,14 @@
 }
 
 .date {
-    margin-top: 1rem;
+    margin-left: 10px;
+    margin-top: 1.5rem;
+}
+
+body {
+    background-color: darkslategrey;
+}
+
+.card {
+    margin-bottom: 0px;
 }
