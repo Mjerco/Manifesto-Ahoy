@@ -70,10 +70,10 @@
         <div class="col-2"></div>
         <div class="col-4">
             <div class="card mb-3" style="max-width: 540px;">
-                <a href="./index.php?context=winter-fair">
+                <a href="./index.php?content=winter-fair">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <p class="date">04 December</p>
+                        <p class="date text-card">04 December</p>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -85,10 +85,10 @@
                 </a>
             </div>
             <div class="card mb-3" style="max-width: 540px;">
-                <a href="./index.php?context=winter-fair">
+                <a href="./index.php?content=winter-fair">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <p class="date">05 December</p>
+                        <p class="date text">05 December</p>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -100,7 +100,7 @@
                 </a>
             </div>
             <div class="card mb-3" style="max-width: 540px;">
-                <a href="./index.php?context=wooning-zesdaagse">
+                <a href="./index.php?content=wooning-zesdaagse">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <p class="date">07 December</p>
@@ -116,6 +116,7 @@
             </div>
         </div>
         <div class="col-5">
+            <a href="./index.php?content=wooning-zesdaagse">
             <div class="card bg-dark text-white">
                 <img src="./IMG/wooning-zesdaagse-ahoy.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
@@ -123,6 +124,7 @@
                     <p class="card-text">7 tot 12 December 2021</p>
                 </div>
             </div>
+            </a>
         </div>
         <div class="col-1"></div>
     </div>

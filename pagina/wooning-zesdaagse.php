@@ -14,7 +14,7 @@
         <h5 class="card-title">7 tot 12 December</h5>
         <p class="card-text">
             Van 7 t/m 12 december 2021 vindt de Wooning Zesdaagse weer plaats in Rotterdam Ahoy!
-    	    Zes dagen lang genieten van baanwielrennen. Aan de start van de 39e editie staan vele toppers, 
+    	      Zes dagen lang genieten van baanwielrennen. Aan de start van de 39e editie staan vele toppers, 
             waaronder Niki Terpstra en Kenny De Ketele. Ook de spectaculaire sprintwedstrijden met de Nederlandse sprinttop staan weer op het programma, 
             met o.a. Harrie Lavreysen, Jeffrey Hoogland en Matthijs Büchli.
         </p>
