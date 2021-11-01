@@ -29,3 +29,10 @@ body {
     width: 100%;
 }
 
+p , h3 , h5 {
+    color: white;
+}
+
+.event-button {
+    margin-bottom: 1.5rem;
+}
