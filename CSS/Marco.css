@@ -1,21 +1,25 @@
-.navbar {
-    background-color: #2f2f30;
-    padding: 0px;
-}
-
 .text-card {
     margin-bottom: 0px;
+    color: white;
+}
+
+.card-title-btm {
+    margin-bottom: 1rem;
+}
+
+.big-event {
+    text-align: right;
+    color: white;
+}
+
+.month {
+    text-align: right;
+    color: white;
 }
 
 .date {
     margin-left: 10px;
     margin-top: 1.5rem;
-}
-
-body {
-    background-color: #262529;
-    overflow-x: hidden;
-    margin-right: -10%;
 }
 
 .card {
@@ -29,10 +33,6 @@ body {
     width: 100%;
 }
 
-p , h3 , h5 {
-    color: white;
-}
-
 .event-button {
     margin-bottom: 1.5rem;
 }
@@ -42,7 +42,17 @@ a:link {
     text-decoration: none;
   }
   
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
   a:hover {
     color: yellow;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: white;
     text-decoration: none;
   }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
   <a class="navbar-brand" href="./index.php?content=home">
       <img src="./IMG/rotterdam-ahoy-logo.png" alt="Logo" width="30" height="24">

@@ -1,3 +1,4 @@
+<link href="./CSS/Marco.css" rel="stylesheet">
 <div id="carouselExampleSlidesOnly">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -10,9 +11,9 @@
   <div class="col-4">
   <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Studiekeuzebeurs West</h3>
-        <h5 class="card-title">10 & 11 December</h5>
-        <p class="card-text">
+        <h3 class="card-title text-card">Studiekeuzebeurs West</h3>
+        <h5 class="card-title-btm text-card">10 & 11 December</h5>
+        <p class="text-card">
           Ieder jaar worstelen vele leerlingen weer met één van de belangrijkste keuzes in hun leven:
           het kiezen van een vervolgopleiding. Sta jij voor je studiekeuze? Of twijfel je over de studie die je gekozen hebt? 
           Wil jij na je huidige studie nog doorstuderen? Of heb je een zoon of dochter die voor zijn of haar studiekeuze staat? 

@@ -1,3 +1,4 @@
+<link href="./CSS/Marco.css" rel="stylesheet">
 <div id="carouselExampleSlidesOnly">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -10,9 +11,9 @@
   <div class="col-4">
   <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Winter Fair</h3>
-        <h5 class="card-title">1 tot 5 December</h5>
-        <p class="card-text">
+        <h3 class="text-card card-title">Winter Fair</h3>
+        <h5 class="text-card card-title-btm">1 tot 5 December</h5>
+        <p class="text-card">
           De Winter-Fair is een gezellig dagje uit voor jong en oud. Met veel diversiteit aan 
           exposanten die de nieuwste trends presenteren en verkopen. Dagelijks zullen er ook leuke activiteiten worden 
           georganiseerd onder het genot van allerlei lekkernijen, modeshows, een bingo en optredens van diverse artiesten.

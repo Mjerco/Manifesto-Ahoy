@@ -1,3 +1,4 @@
+<link href="./CSS/Marco.css" rel="stylesheet">
 <div id="carouselExampleSlidesOnly">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -10,9 +11,9 @@
   <div class="col-4">
   <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Woonig Zesdaagse</h3>
-        <h5 class="card-title">7 tot 12 December</h5>
-        <p class="card-text">
+        <h3 class="text-card card-title">Woonig Zesdaagse</h3>
+        <h5 class="text-card card-title-btm">7 tot 12 December</h5>
+        <p class="text-card">
             Van 7 t/m 12 december 2021 vindt de Wooning Zesdaagse weer plaats in Rotterdam Ahoy!
     	      Zes dagen lang genieten van baanwielrennen. Aan de start van de 39e editie staan vele toppers, 
             waaronder Niki Terpstra en Kenny De Ketele. Ook de spectaculaire sprintwedstrijden met de Nederlandse sprinttop staan weer op het programma, 

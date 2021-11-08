@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #2f2f30;
+    padding: 0px;
+}
+
+body {
+    background-color: #262529;
+    overflow-x: hidden;
+    margin-right: -10%;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
