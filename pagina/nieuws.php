@@ -2,9 +2,9 @@
 include("./scripts/connect_db.php");
 ?>
 
-<div class="news-page">
-    <div class="banner">
-        <div class="header">
+<div class="">
+    <div class="">
+        <div class="">
             <h1>Nieuwsberichten</h1>
             <br>
             <div class="row">
@@ -12,7 +12,20 @@ include("./scripts/connect_db.php");
             </div>
         </div>
     </div>
-    <div class="container articles">
+</div>
+<div class="container container-button">
+    <div class="row">
+        <div class="col-12 col-md-6 col-xl-5">
+            <a href="index.php?content=toevoegen_nieuwsberichten" class="button">Voeg artikel toe</a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-5">
+            <a href="index.php?content=admin_categorie" class="button">Categorieën beheren</a>
+        </div>
+    </div>
+</div>
+<div class="container ">
+    <div class=''></div>
+    <div class="">
         <!-- <div class="row categories sticky-top">
             <div class="col-4 col-md-3 categories-tab"><a href="#" class="categories-button">Alle artikelen </a></div>
             <?php
@@ -20,62 +33,73 @@ include("./scripts/connect_db.php");
             $sql = "SELECT * FROM categories";
             $result = mysqli_query($conn, $sql);
 
+
             while ($record = mysqli_fetch_assoc($result)) {
-                echo "<div class='col-4 col-md-3 categories-tab'><a href='#' class='categories-button'>" . $record['category_name'] . "</a></div>";
+                echo "<div class='col-4 col-md-3 categories-tab'><a href='#' class='categories-button'>" . $record['name'] . "</a></div>";
             } 
             if (mysqli_num_rows($result) > 5) {
                
+                
+
             }?>
+            
         </div> -->
         <!-- <div class='row' style='background-color:white;'><a href="./index.php?content=admin_nieuwsberichten">admin pagina</a></div> -->
-        <div class="row articles-container">
-            <div class='custom-hr'></div>
+        <div class="row ">
+            <div class=''></div>
 
             <?php
             // Make connection with database.
-            $sql = "SELECT * FROM news INNER JOIN categories ON news.category_id = categories.category_id ORDER BY news_date DESC";
+            $sql = "SELECT * FROM news INNER JOIN categories ON news.category = categories.id ORDER BY ndate DESC";
             $result = mysqli_query($conn, $sql);
+
+            
 
             while ($record = mysqli_fetch_assoc($result)) {
                 // Check if image is uploaded.
-                if ($record['news_image'] != NULL) {
-                    $news_image = "news_uploads/" . $record['news_image'];
+                if ($record['image'] != NULL) {
+                    $image = "img/" . $record['image'];
                 } else {
-                    $news_image = 'default-placeholder.png';
+                    $image = 'default-placeholder.png';
                 }
-
+                
                 // Compile datetime format.
-                $news_date = date("d M Y", strtotime($record['news_date']));
-                $news_time = date("H:i", strtotime($record['news_date']));
-                $news_datetime = $news_date . " om " . $news_time;
+                $date = date("d M Y", strtotime($record['ndate']));
+                $time = date("H:i", strtotime($record['ndate']));
+                $datetime = $date . " om " . $time;
+
+               
 
                 // Echo all articles.
-                echo "<div class='row info-row'>
-                        <h6 class='datetime'>Laatst bewerkt op " . $news_datetime . "</h6>
+                echo "<div class='row '>
+                        <h6 class=''>Laatst bewerkt op " . $datetime . "</h6>
                         " // <h6 class='category'>Categorie: " . $record['category_name'] . "</h6> 
                     . "</div>
-                    <div class='col-12 col-md-3 image-row'>
-                        <img src='../img/" . $news_image . "' draggable='false'>
+                    <div class='col-12 col-md-3 '>
+                        <img src='./" . $image . "' draggable='false'>
                     </div>
-                    <div class='col-12 col-md-9 article-row'> 
+                    <div class='col-12 col-md-9 '> 
                         <div class='row'>  
-                            <div class='col-12 title'>
-                                <a href='index.php?content=artikel&id={$record["news_id"]}'>" . $record['news_title'] . "</a>
+                            <div class='col-12 '>
+                                <a href='index.php?content=artikel&id={$record["id"]}'>" . $record['title'] . "</a>
                             </div>
                             </div>
                             <div class='row'>  
-                                <div class='col-12 col-md-8 introduction'>" . $record['news_introduction'] . "</div>
+                                <div class='col-12 col-md-8 introduction'>" . $record['introduction'] . "</div>
                                 <div class='col-12 col-md-4 read-more'>
-                                    <a href='index.php?content=artikel&id={$record["news_id"]}'>Lees meer...</a>
+                                    <a href='index.php?content=artikel&id={$record["id"]}'>Lees meer...</a>
                                 </div>
                             </div>
                         </div>
-                    <div class='custom-hr'></div>";
+                        <div class='row'>
+                        <a href='index.php?content=aanpassen_nieuwsberichten&id={$record["id"]}'>aanpasen bericht</a>
+                    </div>
+                    <div class='row'>
+                        <a href='index.php?content=delete_news_script&id={$record["id"]}'>delete bericht</a>
+                    </div>";
             }
             ?>
         </div>
-        <!-- <div class="row" style="height:100px;text-align:center;background-color:white;">
-            <p>< 1 2 3 4 ></p>
-        </div> -->
+
     </div>
 </div>
