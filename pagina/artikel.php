@@ -1,12 +1,10 @@
 <?php
 include("./scripts/connect_db.php");
 
-$id = $_GET['id'];
-$sql = "SELECT * FROM news INNER JOIN categories ON news.category = categories.id WHERE id = $id";
+$id = $_GET['nid'];
+$sql = "SELECT * FROM news INNER JOIN categories ON news.category = categories.id WHERE nid = $id";
 $result = mysqli_query($conn, $sql);
 $record = mysqli_fetch_assoc($result);
-
-var_dump($record);
 
 if ($record['image'] != NULL) {
     $image = "img/" . $record['image'];

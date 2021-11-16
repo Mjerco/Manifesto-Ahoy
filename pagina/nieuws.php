@@ -81,21 +81,21 @@ include("./scripts/connect_db.php");
                     <div class='col-12 col-md-9 '> 
                         <div class='row'>  
                             <div class='col-12 '>
-                                <a href='index.php?content=artikel&id={$record["id"]}'>" . $record['title'] . "</a>
+                                <a href='index.php?content=artikel&nid={$record["nid"]}'>" . $record['title'] . "</a>
                             </div>
                             </div>
                             <div class='row'>  
                                 <div class='col-12 col-md-8 introduction'>" . $record['introduction'] . "</div>
                                 <div class='col-12 col-md-4 read-more'>
-                                    <a href='index.php?content=artikel&id={$record["id"]}'>Lees meer...</a>
+                                    <a href='index.php?content=artikel&nid={$record["nid"]}'>Lees meer...</a>
                                 </div>
                             </div>
                         </div>
                         <div class='row'>
-                        <a href='index.php?content=aanpassen_nieuwsberichten&id={$record["id"]}'>aanpasen bericht</a>
+                        <a href='index.php?content=aanpassen_nieuwsberichten&nid={$record["nid"]}'>aanpasen bericht</a>
                     </div>
                     <div class='row'>
-                        <a href='index.php?content=delete_news_script&id={$record["id"]}'>delete bericht</a>
+                        <a href='index.php?content=delete_news_script&nid={$record["nid"]}'>delete bericht</a>
                     </div>";
             }
             ?>
