@@ -1,6 +1,5 @@
 <?php
 include("./scripts/functions.php");
-//    is_autorized(["1"]);
 ?>
 
 </div>
@@ -49,7 +48,7 @@ include("./scripts/functions.php");
                         $sql = "SELECT * FROM categories";
                         $result = mysqli_query($conn, $sql);
                         while ($record = mysqli_fetch_assoc($result)) {
-                            echo "<option value='" . $record['category_id'] . "'>" . $record['category_name'] . "</option>";
+                            echo "<option value='" . $record['category_id'] . "'>" . $record['name'] . "</option>";
                         }
                             ?>
                     </select>

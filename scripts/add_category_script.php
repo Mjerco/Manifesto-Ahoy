@@ -6,7 +6,7 @@ include("../scripts/functions.php");
 $category = sanitize($_POST['category']);
 
 // Insert into table news
-$sql = "INSERT INTO `categories` (`category_id`, `category_name`) 
+$sql = "INSERT INTO `categories` (`category_id`, `name`) 
         VALUES (NULL, '$category');";
 
 // Check if POST array is empty 
@@ -19,3 +19,5 @@ if ($category != null) {
 else {
     header("Location: ../index.php?content=admin_categorie");
 }
+
+// Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`manifestoahoy`.`news`, CONSTRAINT `news_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`))

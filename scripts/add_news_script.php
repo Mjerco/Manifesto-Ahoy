@@ -15,10 +15,10 @@ $datetime = date("Y-m-d H:i:s");
 $image_name = null;
 
 // Check if POST arrays are not empty
-if ($title != null && $introduction != null && $article != null) {
+if ($title != null && $introduction != null && $article != null && $category != null) {
 
   // Upload image
-  $target_dir = "../img/news_uploads/";
+  $target_dir = "../img/";
   $target_file = $target_dir . basename($_FILES["image"]["name"]);
   $image_name = $_FILES['image']["name"];
   $uploadOk = 1;
@@ -36,13 +36,14 @@ if ($title != null && $introduction != null && $article != null) {
   }
 
   // Insert into table news
-  $sql = "INSERT INTO `news` (`news_id`, `news_title`, `news_image`, `news_date`, `news_introduction`, `news_article`, `category_id`) 
+  $sql = "INSERT INTO `news` (`id`, `title`, `image`, `creation_date`, `introduction`, `article`, `category_id`) 
         VALUES (NULL, '$title', '$image_name', '$datetime', '$introduction', '$article', '$category');";
-
+  var_dump($sql);
   // Run query on database
   if (mysqli_query($conn, $sql)) {
-    header("Location: ../index.php?content=admin_nieuwsberichten");
+    header("Location: ../index.php?content=home");
   }
 } else {
   header("Location: ../index.php?content=toevoegen_nieuwsberichten");
 }
+

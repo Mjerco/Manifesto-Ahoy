@@ -50,7 +50,7 @@ include("./scripts/connect_db.php");
 
             <?php
             // Make connection with database.
-            $sql = "SELECT * FROM news INNER JOIN categories ON news.category = categories.id ORDER BY ndate DESC";
+            $sql = "SELECT * FROM news INNER JOIN categories ON news.category_id = categories.category_id ORDER BY creation_date DESC";
             $result = mysqli_query($conn, $sql);
 
             
@@ -64,8 +64,8 @@ include("./scripts/connect_db.php");
                 }
                 
                 // Compile datetime format.
-                $date = date("d M Y", strtotime($record['ndate']));
-                $time = date("H:i", strtotime($record['ndate']));
+                $date = date("d M Y", strtotime($record['creation_date']));
+                $time = date("H:i", strtotime($record['creation_date']));
                 $datetime = $date . " om " . $time;
 
                
@@ -81,21 +81,21 @@ include("./scripts/connect_db.php");
                     <div class='col-12 col-md-9 '> 
                         <div class='row'>  
                             <div class='col-12 '>
-                                <a href='index.php?content=artikel&nid={$record["nid"]}'>" . $record['title'] . "</a>
+                                <a href='index.php?content=artikel&id={$record["id"]}'>" . $record['title'] . "</a>
                             </div>
                             </div>
                             <div class='row'>  
                                 <div class='col-12 col-md-8 introduction'>" . $record['introduction'] . "</div>
                                 <div class='col-12 col-md-4 read-more'>
-                                    <a href='index.php?content=artikel&nid={$record["nid"]}'>Lees meer...</a>
+                                    <a href='index.php?content=artikel&id={$record["id"]}'>Lees meer...</a>
                                 </div>
                             </div>
                         </div>
                         <div class='row'>
-                        <a href='index.php?content=aanpassen_nieuwsberichten&nid={$record["nid"]}'>aanpasen bericht</a>
+                        <a href='index.php?content=aanpassen_nieuwsberichten&id={$record["id"]}'>aanpasen bericht</a>
                     </div>
                     <div class='row'>
-                        <a href='index.php?content=delete_news_script&nid={$record["nid"]}'>delete bericht</a>
+                        <a href='index.php?content=delete_news_script&id={$record["id"]}'>delete bericht</a>
                     </div>";
             }
             ?>

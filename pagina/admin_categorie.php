@@ -1,6 +1,5 @@
 <?php
 include("./scripts/functions.php");
-//    is_autorized(["1"]);
 ?>
 
 </div>
@@ -36,7 +35,7 @@ include("./scripts/functions.php");
                 $result = mysqli_query($conn, $sql);
                 while ($record = mysqli_fetch_assoc($result)) {
                     echo "<div class='col-12'>
-                            <span>" . $record['category_name'] . "</span>
+                            <span>" . $record['name'] . "</span>
                             <a href='./index.php?content=delete_category_script&id={$record["category_id"]}' style='color:#333'><i class='bi bi-trash-fill'></i></a>
                         </div>";
                 }
