@@ -1,3 +1,6 @@
+<?php
+    include("./scripts/connect_db.php");
+?>
 <link href="./CSS/Marco.css" rel="stylesheet">
 <div class="container">
     <div class="row">
@@ -193,4 +196,4 @@
         </div>
         <div class="col-1"></div>
     </div>
-</div> 
+</div>

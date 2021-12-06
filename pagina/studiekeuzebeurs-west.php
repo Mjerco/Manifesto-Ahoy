@@ -1,3 +1,6 @@
+<?php
+    include("./scripts/connect_db.php");
+?>
 <link href="./CSS/Marco.css" rel="stylesheet">
 <div id="carouselExampleSlidesOnly">
   <div class="carousel-inner">
