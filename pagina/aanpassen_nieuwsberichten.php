@@ -54,7 +54,7 @@ $record = mysqli_fetch_assoc($result);
                         $sql = "SELECT * FROM categories";
                         $result = mysqli_query($conn, $sql);
                         while ($record = mysqli_fetch_assoc($result)) {
-                            echo "<option value='" . $record['category_id'] . "'>" . $record['category_name'] . "</option>";
+                            echo "<option value='" . $record['category_id'] . "'>" . $record['name'] . "</option>";
                         }
                         ?>
                     </select>
