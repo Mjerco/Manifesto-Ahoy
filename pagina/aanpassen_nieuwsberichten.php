@@ -6,7 +6,7 @@ include("./scripts/functions.php");
 
 $id = sanitize($_GET['id']);
 
-$sql = "SELECT * FROM `news` WHERE `news_id` = {$id};";
+$sql = "SELECT * FROM `news` WHERE `id` = {$id};";
 $result = mysqli_query($conn, $sql);
 $record = mysqli_fetch_assoc($result);
 ?>
@@ -23,19 +23,19 @@ $record = mysqli_fetch_assoc($result);
             <div class="row mb-3">
                 <label class="col-sm-3 col-lg-2 col-form-label">Titel</label>
                 <div class="col-sm-9 col-lg-10">
-                    <input name="title" type="text" class="form-control" maxlength="100" required value="<?php echo $record['news_title']; ?>">
+                    <input name="title" type="text" class="form-control" maxlength="100" required value="<?php echo $record['title']; ?>">
                 </div>
             </div>
             <div class="row mb-3">
                 <label class="col-sm-3 col-lg-2 col-form-label">Inleiding</label>
                 <div class="col-sm-9 col-lg-10">
-                    <input name="introduction" type="text" class="form-control" maxlength="200" required value="<?php echo $record['news_introduction']; ?>">
+                    <input name="introduction" type="text" class="form-control" maxlength="200" required value="<?php echo $record['introduction']; ?>">
                 </div>
             </div>
             <div class="row mb-3">
                 <label class="col-sm-3 col-lg-2 col-form-label">Artikel</label>
                 <div class="col-sm-9 col-lg-10">
-                    <input name="article" type="text" class="form-control" rows="4" required value="<?php echo $record['news_article']; ?>">
+                    <input name="article" type="text" class="form-control" rows="4" required value="<?php echo $record['article']; ?>">
                 </div>
             </div>
             <div class="row mb-3">

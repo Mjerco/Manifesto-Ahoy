@@ -20,7 +20,7 @@ $image_name = null;
 if ($title != null && $introduction != null && $article != null) {
 
   // Upload image
-  $target_dir = "../img/news_uploads/";
+  $target_dir = "../img/";
   $target_file = $target_dir . basename($_FILES["image"]["name"]);
   $image_name = $_FILES['image']["name"];
   $uploadOk = 1;
@@ -39,14 +39,14 @@ if ($title != null && $introduction != null && $article != null) {
 
   // Insert into table news
   $sql = "UPDATE `news` 
-        SET `news_id` = '{$id}',
-            `news_title` = '{$title}', 
-            `news_image` = '{$image_name}',
-            `news_date` = '{$datetime}', 
-            `news_introduction` = '{$introduction}', 
-            `news_article` = '{$article}', 
+        SET `id` = '{$id}',
+            `title` = '{$title}', 
+            `image` = '{$image_name}',
+            `creation_date` = '{$datetime}', 
+            `introduction` = '{$introduction}', 
+            `article` = '{$article}', 
             `category_id` = '{$category}' 
-        WHERE `news_id` = '{$id}';";
+        WHERE `id` = '{$id}';";
 
   // Run query on database
   if (mysqli_query($conn, $sql)) {
