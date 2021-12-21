@@ -54,7 +54,7 @@ include("./scripts/functions.php");
                     </select>
                 </div>
             </div>
-            <button type="submit" class="btn p-4">Toevoegen</button>
+            <button type="submit" class="btn btn-dark p-4">Toevoegen</button>
         </form>
     </div>
 </div>

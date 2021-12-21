@@ -1,6 +1,4 @@
 <?php
-    // session id controleren
-
     include("./scripts/connect_db.php");
 
     //intval haalt de int uit de url
@@ -8,7 +6,7 @@
 
     $sql = "DELETE FROM news WHERE id = $news_id";
     if ($result = mysqli_query($conn, $sql)) {
-    header("Location: ../index.php?content=admin_nieuwsberichten");
+    header("Location: ../index.php?content=admin_nieuws_bericht");
     } else {
 
     }

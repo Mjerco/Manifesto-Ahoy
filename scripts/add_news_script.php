@@ -38,10 +38,9 @@ if ($title != null && $introduction != null && $article != null && $category != 
   // Insert into table news
   $sql = "INSERT INTO `news` (`id`, `title`, `image`, `creation_date`, `introduction`, `article`, `category_id`) 
         VALUES (NULL, '$title', '$image_name', '$datetime', '$introduction', '$article', '$category');";
-  var_dump($sql);
   // Run query on database
   if (mysqli_query($conn, $sql)) {
-    header("Location: ../index.php?content=home");
+    header("Location: ../index.php?content=admin_nieuws_bericht");
   }
 } else {
   header("Location: ../index.php?content=toevoegen_nieuwsberichten");

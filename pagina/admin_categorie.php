@@ -22,7 +22,7 @@ include("./scripts/functions.php");
                             <input name="category" type="text" class="form-control" required>
                         </div>
                     </div>
-                    <button type="submit" class="btn p-4">Toevoegen</button>
+                    <button type="submit" class="btn btn-dark p-4">Toevoegen</button>
                 </form>
             </div>
             <div class="col-0 col-md-2"></div>
@@ -36,7 +36,7 @@ include("./scripts/functions.php");
                 while ($record = mysqli_fetch_assoc($result)) {
                     echo "<div class='col-12'>
                             <span>" . $record['name'] . "</span>
-                            <a href='./index.php?content=delete_category_script&id={$record["category_id"]}' style='color:#333'><i class='bi bi-trash-fill'></i></a>
+                            <a href='index.php?content=delete_catecory_scrip&id={$record["category_id"]}' style='color:white'><i class='bi bi-trash-fill'>delete</a>
                         </div>";
                 }
                 ?>

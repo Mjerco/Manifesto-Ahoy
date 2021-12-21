@@ -1,0 +1,28 @@
+.image{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+.image img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain; 
+}
+
+h6.artikele{
+    padding-top: 2rem;
+}
+div.read-more{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5px;
+}
+
+.artikle-img{
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    max-height: 750px;
+    object-fit: contain;
+    margin-top: 2.5rem;
+}
