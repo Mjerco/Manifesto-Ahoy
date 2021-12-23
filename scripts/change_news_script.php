@@ -50,7 +50,7 @@ if ($title != null && $introduction != null && $article != null) {
 
   // Run query on database
   if (mysqli_query($conn, $sql)) {
-    header("Location: ../index.php?content=admin_nieuwsberichten");
+    header("Location: ../index.php?content=admin_nieuws_bericht");
   }
 } // If POST array is empty 
 else {

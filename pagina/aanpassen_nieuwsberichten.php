@@ -61,7 +61,7 @@ $record = mysqli_fetch_assoc($result);
                 </div>
             </div>
             <input name="id" class="form-control" type="hidden" value="<?php echo $id; ?>">
-            <button type="submit" class="btn p-4">Wijzigen</button>
+            <button type="submit" class="btn btn-dark p-4">Wijzigen</button>
         </form>
     </div>
 </div>

@@ -18,6 +18,9 @@
           <a class="nav-link" href="./index.php?content=nieuws">Nieuws</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="./index.php?content=admin_nieuws_bericht">Admin nieuws</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="./index.php?content=contact">Contact</a>
         </li>
         <li class="nav-item">

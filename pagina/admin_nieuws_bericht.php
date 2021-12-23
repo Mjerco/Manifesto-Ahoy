@@ -73,8 +73,8 @@ include("./scripts/connect_db.php");
                 // Echo all articles.
                 echo "<div class='row '>
                         <h6 class='artikele'>Laatst bewerkt op " . $datetime . "</h6>
-                        " // <h6 class='category'>Categorie: " . $record['category_name'] . "</h6> 
-                    . "</div>
+                         <h6 class='category'>Categorie: " . $record['name'] . "</h6> 
+                    </div>
                     <div class='col-12 col-md-3 image'>
                         <img src='./" . $image . "' draggable='false'>
                     </div>
@@ -95,7 +95,7 @@ include("./scripts/connect_db.php");
                         <a href='index.php?content=aanpassen_nieuwsberichten&id={$record["id"]}'>aanpasen bericht</a>
                     </div>
                     <div class='row'>
-                        <a href='index.php?content=delete_news_script&id={$record["id"]}'>delete bericht</a>
+                        <a href='index.php?content=delete_news_script&id={$record["id"]}'>bericht verwijderen</a>
                     </div>";
             }
             ?>
