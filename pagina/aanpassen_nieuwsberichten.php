@@ -9,6 +9,7 @@ $id = sanitize($_GET['id']);
 $sql = "SELECT * FROM `news` WHERE `id` = {$id};";
 $result = mysqli_query($conn, $sql);
 $record = mysqli_fetch_assoc($result);
+var_dump($record);
 ?>
 <div class="change-news-page">
     <div class="header">
@@ -41,7 +42,7 @@ $record = mysqli_fetch_assoc($result);
             <div class="row mb-3">
                 <label class="col-sm-3 col-lg-2 col-form-label">Afbeelding</label>
                 <div class="col-sm-9 col-lg-10">
-                    <input name="image" class="form-control" type="file">
+                    <input name="image" class="form-control" type="file" required value="<?php echo $record['image']; ?>">
                 </div>
             </div>
             <div class="row mb-3">
